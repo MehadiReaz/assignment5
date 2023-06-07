@@ -9,11 +9,11 @@ class Page3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Page 3'),
+        title: const Text('Page 3'),
         backgroundColor: Colors.redAccent,
       ),
-      drawer: DrawerWidget(),
-      body: Center(
+      drawer: const DrawerWidget(),
+      body: const Center(
           child: Text(
         'Page 3',
         style: TextStyle(

@@ -3,8 +3,6 @@ import 'package:assignment5/screens/page2.dart';
 import 'package:assignment5/screens/page3.dart';
 import 'package:flutter/material.dart';
 
-import '../widgets/drawer_widget.dart';
-
 class HoemScreen extends StatefulWidget {
   const HoemScreen({super.key});
 
@@ -15,20 +13,14 @@ class HoemScreen extends StatefulWidget {
 class _HoemScreenState extends State<HoemScreen> {
   int _currentIndex = 0;
 
-  List<Widget> _screens = [
-    Page1(),
-    Page2(),
-    Page3(),
+  final List<Widget> _screens = [
+    const Page1(),
+    const Page2(),
+    const Page3(),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   elevation: 10,
-      //   backgroundColor: Colors.deepOrange,
-      //   title: Text('My App'),
-      // ),
-      // drawer: DrawerWidget(),
       body: IndexedStack(
         index: _currentIndex,
         children: _screens,

@@ -28,7 +28,7 @@ class DrawerWidget extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => Page1(),
+                  builder: (context) => const Page1(),
                 ),
               );
             },
@@ -39,7 +39,7 @@ class DrawerWidget extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => Page2(),
+                  builder: (context) => const Page2(),
                 ),
               );
             },
@@ -50,7 +50,7 @@ class DrawerWidget extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => Page3(),
+                  builder: (context) => const Page3(),
                 ),
               );
             },
